@@ -1,4 +1,5 @@
 **Intro**
+
 A simple Terraform experience to both understand and work with AKS in the context of HPCC Systems. Basics covered:
 
 - User Assigned Identity that is associated with the AKS cluster
