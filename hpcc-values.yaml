@@ -1,0 +1,49 @@
+storage:
+  planes:
+  - name: dali
+    pvc: dali
+    prefix: "/var/lib/HPCCSystems/dalistorage"
+    category: dali
+  - name: dll
+    pvc: dll
+    prefix: "/var/lib/HPCCSystems/queries"
+    category: dll
+  - name: sasha
+    pvc: sasha
+    prefix: "/var/lib/HPCCSystems/sasha"
+    category: sasha
+  - name: data
+    pvc: data
+    prefix: "/var/lib/HPCCSystems/hpcc-data"
+    category: data
+    defaultSprayParts: 2
+  - name: mydropzone
+    pvc: mydropzone
+    prefix: "/var/lib/HPCCSystems/dropzone"
+    category: lz
+
+
+sasha:
+  wu-archiver:
+    plane: sasha
+  dfuwu-archiver:
+    plane: sasha
+
+thor:
+- name: thor
+  prefix: thor
+  numWorkers: 2
+  maxJobs: 4
+  maxGraphs: 2
+
+security:
+  eclSecurity:
+    # Possible values:
+    # allow - functionality is permitted
+    # deny - functionality is not permitted
+    # allowSigned - functionality permitted only if code signed
+    embedded: "allow"
+    pipe:  "allow"
+    extern: "allow"
+    datafile: "allow"
+
