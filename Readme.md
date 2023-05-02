@@ -7,6 +7,8 @@ A simple Terraform experience to both understand and work with AKS in the contex
 - Virtual Network and Subnets for AKS
 - Persistence Storage Account (Azure Files) for AKS 
 - Persitance Volumes and Volume Claims for AKS
+- Configuring HPCC Values
+- Installing HPCC
 
 **Main Commands**
 
